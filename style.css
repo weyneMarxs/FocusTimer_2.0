@@ -45,8 +45,6 @@ body {
   font-size: 4.8rem;
   cursor: pointer;
   color: #323238;
-  /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75); */
-  /* border-radius: 999rem; */
   transition: all .3s ease;
 }
 
@@ -87,4 +85,11 @@ body {
 #sounds button.active {
   background: #02799D;
   color: #FFFFFF;
+}
+
+footer {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 35%;
+  font-size: 1.6rem;
 }
