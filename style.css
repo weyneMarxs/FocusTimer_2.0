@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: wihte;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+#timer span {
+  font-size: 12.6rem;
+  font-weight: 500;
+  color: #323238;
+}
+
+#controls {
+  gap: 4rem;
+  margin-top: 4.8rem;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 4.8rem;
+  cursor: pointer;
+  color: #323238;
+  /* box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75); */
+  /* border-radius: 999rem; */
+  transition: all .3s ease;
+}
+
+#timer button:hover {
+  color: #7f7f83;
+}
+
+#sounds-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+.card {
+  background: #E1E1E6;
+  padding: 4.8rem;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all .3s ease;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.active-card,
+.active-card button {
+  background: #02799D;
+  color: #FFFFFF;
+}
