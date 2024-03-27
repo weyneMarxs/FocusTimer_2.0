@@ -13,9 +13,9 @@
   <div id="app">
     <section id="left">
       <div id="timer" class="flex">
-        <span>25</span>
+        <span id="minutes">25</span>
         <span>:</span>
-        <span>00</span>
+        <span id="seconds">00</span>
       </div>
       <div id="controls" class="flex">
         <button class="ph-bold ph-play-circle" id="btnPlay"></button>
@@ -25,18 +25,10 @@
       </div>
     </section>
     <section id="sounds">
-      <div class="card">
-        <button class="ph-bold ph-tree"></button>
-      </div>
-      <div class="card active-card">
-        <button class="ph-bold ph-cloud-rain"></button>
-      </div>
-      <div class="card">
-        <button class="ph-bold ph-storefront"></button>
-      </div>
-      <div class="card">
-        <button class="ph-bold ph-flame"></button>
-      </div>
+      <button data-sound="forest" class="ph-bold ph-tree"></button>
+      <button data-sound="rain" class="ph-bold ph-cloud-rain"></button>
+      <button data-sound="coffeShop" class="ph-bold ph-storefront"></button>
+      <button data-sound="fireside" class="ph-bold ph-flame"></button>
     </section>
   </div>
 </body>

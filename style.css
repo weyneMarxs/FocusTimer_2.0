@@ -54,6 +54,14 @@ body {
   color: #02799D;
 }
 
+#controls button.active {
+  color: #02799D;
+}
+
+#controls button.active:hover {
+  color: #323238;
+}
+
 #sounds {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -74,4 +82,9 @@ body {
 
 #sounds button:hover {
   box-shadow: none;
+}
+
+#sounds button.active {
+  background: #02799D;
+  color: #FFFFFF;
 }
