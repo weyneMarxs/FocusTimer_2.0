@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="ptbr" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,10 @@
         <span id="seconds">00</span>
       </div>
       <div id="controls" class="flex">
-        <button class="ph-bold ph-play-circle" id="btnPlay"></button>
-        <button class="ph-bold ph-stop-circle" id="btnStop"></button>
-        <button class="ph-bold ph-plus-circle" id="btnPlus"></button>
-        <button class="ph-bold ph-minus-circle" id="btnMinus"></button>
+        <button data-action='toggleRunning'class="ph-bold ph-play-circle" id="btnPlay"></button>
+        <button data-action='toggleRunning'class="ph-bold ph-stop-circle" id="btnStop"></button>
+        <button data-action='plusFive'class="ph-bold ph-plus-circle" id="btnPlus"></button>
+        <button data-action='minusFive'class="ph-bold ph-minus-circle" id="btnMinus"></button>
       </div>
     </section>
     <section id="sounds">

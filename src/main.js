@@ -1,2 +1,4 @@
-import "./controlSounds.js";
-import "./focus_timer/elements.js"
+// import "./controlSounds.js";
+import * as FocusTimer from "./focus_timer/index.js"
+
+FocusTimer.start(10, 0)

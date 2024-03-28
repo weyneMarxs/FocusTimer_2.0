@@ -87,9 +87,13 @@ body {
   color: #FFFFFF;
 }
 
+.disable {
+  user-select: none;
+}
+
 footer {
   position: absolute;
   bottom: 1.6rem;
-  left: 35%;
+  left: 39%;
   font-size: 1.6rem;
 }
