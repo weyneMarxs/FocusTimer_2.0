@@ -54,6 +54,7 @@ body {
 
 #controls button.active {
   color: #02799D;
+  cursor: not-allowed;
 }
 
 #controls button.active:hover {
@@ -85,15 +86,4 @@ body {
 #sounds button.active {
   background: #02799D;
   color: #FFFFFF;
-}
-
-.disable {
-  user-select: none;
-}
-
-footer {
-  position: absolute;
-  bottom: 1.6rem;
-  left: 39%;
-  font-size: 1.6rem;
 }
