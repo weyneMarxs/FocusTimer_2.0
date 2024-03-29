@@ -8,7 +8,7 @@
 - [x] +   : aumenta em mais 5 minutos o tempo do timer.
 - [x] -   : diminui em 5 minutos o tempo do timer.
 
-### OS CARDS TOCAS OS RESPECTIAS SONS
+### OS CARDS REPRODIZEM OS RESPECTIVOS SONS
 
 - [X] Floresta
 - [X] Chuva
