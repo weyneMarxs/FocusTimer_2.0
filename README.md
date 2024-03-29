@@ -17,7 +17,7 @@
 
 ### funcionalidades adcionais
 
-- [x] chegando em 60 minutos não pode mais adicionar tempo, e timer so contar até 60 minutos mesmo que o valor adicionando somando com o do timer passe de 60 ele so adicionarar o resto !
-- [x] os botoes de play e stop ficam desabilitados quando ativar !
+- [x] chegando em 60 minutos não pode mais adicionar tempo, e timer so adiciona até 60 minutos mesmo que o valor adicionando somando com o do timer passe de 60 ele so adicionarar o resto !
+- [x] os botoes de play e stop ficam desabilitados quando ativados !
 
 ![alt](https://i.imgur.com/dB1SDtt.png)

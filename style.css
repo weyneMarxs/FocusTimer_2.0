@@ -57,10 +57,6 @@ body {
   cursor: not-allowed;
 }
 
-#controls button.active:hover {
-  color: #323238;
-}
-
 #sounds {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
