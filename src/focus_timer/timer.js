@@ -1,6 +1,7 @@
 import state from "./state.js";
 import * as el from './elements.js'
-
+import { restart } from "./actions.js";
+import { effect_clang } from "../sounds_control/sounds.js";
 
 export function countDown() {
   clearTimeout(state.countDownId)
@@ -15,7 +16,8 @@ export function countDown() {
     minutes--
   }
   if(minutes < 0 ){
-    reset()
+    restart()
+    effect_clang.play()
     return
   }
   updateDisplay(minutes, seconds)
