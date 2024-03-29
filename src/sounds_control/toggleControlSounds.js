@@ -4,14 +4,16 @@ export const btnSounds = document.querySelectorAll('#sounds button')
 export function toggleForest () {
   const play = btnSounds[0].classList.contains('active')
   if(play) {
-    btnSounds.forEach( index => index.classList.remove('active'))
+    btnSounds.forEach( element => element.classList.remove('active'))
     sounds.bg_forest.pause()
     return
   }
+  btnSounds.forEach((element, index) => {
+    if(index !== 0 ) {
+      element.classList.remove('active')
+    }
+  })
   btnSounds[0].classList.add('active')
-  btnSounds[1].classList.remove('active')
-  btnSounds[2].classList.remove('active')
-  btnSounds[3].classList.remove('active')
   sounds.bg_forest.play()
   sounds.bg_rain.pause()
   sounds.bg_coffeShop.pause()
@@ -25,10 +27,12 @@ export function toggleRain () {
     sounds.bg_rain.pause()
     return
   }
+  btnSounds.forEach((element, index) => {
+    if(index !== 1) {
+      element.classList.remove('active')
+    }
+  }) 
   btnSounds[1].classList.add('active')
-  btnSounds[0].classList.remove('active')
-  btnSounds[2].classList.remove('active')
-  btnSounds[3].classList.remove('active')
   sounds.bg_rain.play()
   sounds.bg_forest.pause()
   sounds.bg_coffeShop.pause()
@@ -43,10 +47,12 @@ export function toggleCoffeShop () {
     sounds.bg_coffeShop.pause()
     return
   }
+  btnSounds.forEach((element, index) => {
+    if(index !== 2) {
+      element.classList.remove('active')
+    }
+  })
   btnSounds[2].classList.add('active')
-  btnSounds[0].classList.remove('active')
-  btnSounds[1].classList.remove('active')
-  btnSounds[3].classList.remove('active')
   sounds.bg_coffeShop.play()
   sounds.bg_rain.pause()
   sounds.bg_forest.pause()
@@ -60,10 +66,12 @@ export function toggleFirerSide () {
     sounds.bg_firerSide.pause()
     return
   }
+  btnSounds.forEach((element, index) => {
+    if(index !== 3) {
+      element.classList.remove('active')
+    }
+  })
   btnSounds[3].classList.add('active')
-  btnSounds[0].classList.remove('active')
-  btnSounds[1].classList.remove('active')
-  btnSounds[2].classList.remove('active')
   sounds.bg_firerSide.play()
   sounds.bg_coffeShop.pause()
   sounds.bg_rain.pause()
